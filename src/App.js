@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import ComponentePadre from './components/ComponentePadre';
+import ImagenCard1 from './components/ImagenCard1';
+import ImagenCard2 from './components/ImagenCard2';
+import ImagenCard3 from './components/ImagenCard3';
+import bgGif from '../src/images/bd.gif'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ backgroundImage: `url(${bgGif})`}}>
+        <ComponentePadre>
+           <ImagenCard1 />
+           <ImagenCard2 />
+           <ImagenCard3 />
+        </ComponentePadre>
     </div>
   );
 }
